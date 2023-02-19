@@ -77,6 +77,10 @@ body {
 }
 
 /* Showcase Section */
+.showcase {
+  margin-bottom: 5rem;
+}
+
 .showcase .grid-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(350px, 1fr));
@@ -164,6 +168,52 @@ body {
 .showcase .grid-item-right div:not(:last-child) {
   border-bottom: 1px solid var(--off-white);
 }
+
+/* Articles Section */
+.articles .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+}
+
+.articles .grid-container div {
+  display: flex;
+}
+
+.articles .grid-container div img {
+  width: 10rem;
+}
+
+.articles .grid-container div .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+
+.articles .grid-container div .content span {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.articles .grid-container div .content h4 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.articles .grid-container div .content h4:hover {
+  color: var(--soft-orange);
+}
+
+.articles .grid-container div .content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
 /* Attribute */
 .attribution {
   font-size: 11px;
