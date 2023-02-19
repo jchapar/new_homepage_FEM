@@ -33,7 +33,7 @@ img {
 }
 
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -124,6 +124,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .grid-item-left .bottom .right button:hover {
@@ -148,6 +149,7 @@ body {
   font-weight: 800;
   color: var(--off-white);
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .showcase .grid-item-right h3:hover {
