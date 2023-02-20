@@ -57,7 +57,7 @@ img {
   display: none;
 }
 
-#open-menu.active {
+#open-menu {
   display: flex;
 }
 
@@ -65,8 +65,8 @@ img {
   display: none;
 }
 
-#close-menu.active {
-  display: flex;
+#close-menu {
+  display: hidden;
 }
 
 nav ul {
@@ -111,6 +111,7 @@ nav ul {
   border: none;
   outline: none;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .grid-item-one .articles button:hover {
@@ -203,4 +204,114 @@ nav ul {
   color: var(--grayish-blue);
   font-weight: 400;
   line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem 0;
+  }
+
+  #open-menu {
+    display: none;
+  }
+
+  /* Navigation */
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li a {
+    color: var(--grayish-blue);
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+
+  nav ul li a:hover {
+    color: var(--soft-orange);
+  }
+
+  nav ul li:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  /* Showcase */
+  .showcase {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .showcase .grid-item-one {
+    grid-column: span 2;
+  }
+
+  .showcase .grid-item-one .articles {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .grid-item-one .articles h1 {
+    font-size: 5.6rem;
+    margin-bottom: 0;
+  }
+
+  .grid-item-one .articles .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .grid-item-one .articles .content p {
+    line-height: 1.8;
+  }
+
+  .grid-item-one .articles .content button {
+    width: 19rem;
+    height: 5rem;
+  }
+
+  /* Grid Item Two */
+  .grid-item-two {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .grid-item-two h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-item-two article {
+    padding: 3rem 0;
+    margin: 1rem 0;
+  }
+
+  .grid-item-two article:not(:last-child) {
+    border-bottom: 1px solid var(--off-white);
+  }
+
+  .grid-item-two article h3 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--off-white);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .grid-item-two article p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--grayish-blue);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+  }
 }
