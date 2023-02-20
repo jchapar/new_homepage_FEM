@@ -246,11 +246,11 @@ nav .mobile-nav.active li a:hover {
   }
 
   nav #open-menu {
-    display: none;
+    display: none !important;
   }
 
   nav #close-menu {
-    display: none;
+    display: none !important;
   }
 
   .overlay {
