@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/jchapar/new_homepage_FEM](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/jchapar/new_homepage_FEM]
+- Live Site URL: [https://jchapar.github.io/new_homepage_FEM/]
 
 ## My process
 
